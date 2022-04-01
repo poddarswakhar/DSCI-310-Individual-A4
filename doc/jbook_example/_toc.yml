@@ -1,12 +1,7 @@
 format: jb-book
 root: jbook_example
-parts:
-  - caption: Name of Numbered Part 1
-    numbered: True  # Only applies to chapters in Part 1.
-    chapters:
-    - file: path/to/part1/chapter1
-    - file: path/to/part1/chapter2
-  - caption: Name of Not-numbered Part 2
-    chapters:
-    - file: path/to/part2/chapter1
-    - file: path/to/part2/chapter2
+defaults:  # The defaults key will be applied to all chapters and sub-sections
+  titlesonly: True
+chapters:
+- file: path/to/chapter1
+- file: path/to/chapter2
